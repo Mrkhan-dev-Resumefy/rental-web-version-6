@@ -43,12 +43,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="logo cursor-pointer bg-transparent border-0 text-left p-0"
             title="EventsRentals.io"
           >
-            <span className="logo-mark" aria-hidden="true" style={{ width: '32.9922px', height: '34.9883px' }}>
+            <span className="logo-mark" aria-hidden="true" style={{ width: '34.9883px', height: '37.9805px' }}>
               <img
                 src="/assets/events-rentals-tent-logo.svg"
                 alt="Tent Logo"
                 className="w-full h-full object-contain"
-                style={{ width: '32.9922px', height: '34.9883px' }}
+                style={{ width: '34.9883px', height: '37.9805px' }}
                 referrerPolicy="no-referrer"
               />
             </span>
