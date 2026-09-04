@@ -1,0 +1,6 @@
+{
+  "name": "EventsRentals.io",
+  "description": "Bounce houses, outdoor movie nights, and popcorn carts delivered across Texas. Clean, safe equipment. Book by phone, text, or WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
