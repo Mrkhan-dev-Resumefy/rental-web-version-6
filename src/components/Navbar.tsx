@@ -48,6 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 src="/assets/events-rentals-tent-logo.svg"
                 alt="Tent Logo"
                 className="w-full h-full object-contain"
+                style={{ width: '32.9922px', height: '32.9922px' }}
                 referrerPolicy="no-referrer"
               />
             </span>
