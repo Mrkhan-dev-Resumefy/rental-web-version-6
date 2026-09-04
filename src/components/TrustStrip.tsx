@@ -6,74 +6,72 @@ export const TrustStrip: React.FC = () => {
     {
       icon: Truck,
       title: 'Free Delivery & Setup',
-      desc: 'On-time delivery, secure anchoring, and full equipment check across Texas.',
-      badgeColor: 'bg-red-500 text-white',
-      cardBg: 'border-red-200/70',
+      desc: 'On-time delivery, secure anchoring, and full equipment safety check across Texas.',
+      badgeBg: 'bg-amber-400 text-slate-900',
     },
     {
       icon: Sparkles,
       title: '100% Sanitized & Clean',
-      desc: 'Hospital-grade non-toxic sanitization before & after every party for safe play.',
-      badgeColor: 'bg-blue-600 text-white',
-      cardBg: 'border-blue-200/70',
+      desc: 'Hospital-grade non-toxic sanitization before & after every celebration.',
+      badgeBg: 'bg-sky-400 text-slate-900',
     },
     {
       icon: PhoneCall,
       title: 'Confirmed by Quick Call',
-      desc: 'No confusing shopping carts — a friendly Texas human verifies your timing.',
-      badgeColor: 'bg-amber-500 text-slate-950',
-      cardBg: 'border-amber-200/70',
+      desc: 'No confusing shopping carts — a friendly Texas team member verifies your timing.',
+      badgeBg: 'bg-emerald-400 text-slate-900',
     },
     {
       icon: MapPin,
       title: 'Serving All of Texas',
       desc: 'Statewide coverage: DFW, Austin, Houston, San Antonio, suburban yards & ranches.',
-      badgeColor: 'bg-red-600 text-white',
-      cardBg: 'border-red-200/70',
+      badgeBg: 'bg-rose-400 text-slate-900',
     },
     {
       icon: MessageSquare,
       title: 'Call, Text or WhatsApp',
       desc: 'Instant replies within minutes during business hours for zero party stress.',
-      badgeColor: 'bg-blue-600 text-white',
-      cardBg: 'border-blue-200/70',
+      badgeBg: 'bg-purple-400 text-slate-900',
     },
   ];
 
   return (
     <section
       id="trust-strip-section"
-      className="relative bg-[#FFFDF2]/90 backdrop-blur-xl border-y-2 border-red-200/80 py-10 px-4 sm:px-6 lg:px-8 shadow-sm"
+      className="relative bg-[#F3ECE2] border-y-[3px] border-[#0F172A] py-14 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-6">
-          <span className="text-xs font-black uppercase tracking-widest text-red-600 bg-red-100/80 border border-red-200 px-3.5 py-1 rounded-full inline-block">
-            🎪 The EventsRentals.io Promise
+        <div className="text-center mb-8">
+          <span className="eyebrow mb-3">
+            <span className="dot" /> The EventsRentals.io Guarantee
           </span>
-          <h3 className="text-2xl font-black font-display text-slate-900 mt-1">
-            Kid-Approved Fun, Zero Stress for Texas Parents
+          <h3 className="text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">
+            Kid-Approved Fun, Zero Stress for Texas Families
           </h3>
+          <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto mt-2">
+            Every booking includes white-glove setup, professional grade equipment, and transparent pricing.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
           {trustItems.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
                 id={`trust-badge-${index}`}
-                className={`flex items-start gap-3 p-4 rounded-2xl bg-[#FFFDF6]/95 backdrop-blur-md border-2 ${item.cardBg} hover:-translate-y-1 transition-all duration-200 shadow-md group hover:shadow-lg`}
+                className="flex flex-col gap-3 p-5 rounded-2xl bg-white border-[2.5px] border-[#0F172A] shadow-[4px_4px_0px_#0F172A,0_8px_16px_rgba(15,23,42,0.06)] hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_#0F172A,0_16px_28px_rgba(15,23,42,0.12)] transition-all duration-200 group"
               >
                 <div
-                  className={`p-2.5 rounded-xl shrink-0 ${item.badgeColor} shadow-md group-hover:scale-110 group-hover:rotate-3 transition-transform`}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${item.badgeBg} border-2 border-[#0F172A] shadow-[2px_2px_0px_#0F172A] group-hover:scale-105 transition-transform`}
                 >
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black font-display text-slate-900 tracking-tight leading-snug">
+                  <h4 className="text-[15px] font-bold font-display text-slate-900 tracking-tight leading-snug">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-slate-600 mt-1 leading-relaxed font-semibold">
+                  <p className="text-[12.5px] text-slate-600 mt-1.5 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

@@ -71,16 +71,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="pulse" />
-              Now Serving All of Texas
+              ⭐ Rated 4.9/5 by 300+ Texas Celebrations
             </div>
             <h1>
               Welcome to<br />
               <span className="highlight">EventsRentals.io</span>
             </h1>
-            <p className="sub">Proudly Serving All of Texas 🤠</p>
+            <p className="sub">Texas's Premier Party &amp; Event Equipment Rentals 🤠</p>
             <p className="body-copy">
-              We bring the fun straight to your event — bounce houses, outdoor movie nights, and popcorn to match.
-              Clean, safe equipment and easy booking by phone, text, or WhatsApp.
+              We deliver pure excitement straight to your backyard — commercial bounce houses, giant outdoor cinema screens, and fresh cinema popcorn carts.
+              Clean, sanitized equipment with instant booking by phone, text, or WhatsApp.
             </p>
             <div className="contact-row">
               <a href={COMPANY_INFO.callLink} className="btn btn-yellow btn-lg">
@@ -108,7 +108,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </a>
             </div>
             <div className="urgency-badge">
-              ⚡ Weekend Dates Fill Up Fast — Book Early
+              🚚 Free Delivery &amp; Setup • 🛡️ 100% Sanitized &amp; Insured
             </div>
           </div>
         </div>
@@ -140,8 +140,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img src="/assets/bounce-large-1.jpg" alt="Large bounce house" />
               </div>
               <div className="body">
+                <div className="flex flex-wrap gap-1.5 mb-2">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">15×15 ft</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">Ages 3–12</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-sky-100 text-sky-800 border border-sky-200">Setup Included</span>
+                </div>
                 <h3>Bounce House — Large</h3>
-                <p>Perfect for big backyard parties and group events. Plenty of room to jump and play safely.</p>
+                <p>Perfect for big backyard parties and group events. Commercial PVC construction with safe enclosed netting.</p>
                 <span className="price-line">📞 Call for Pricing</span>
                 <button
                   type="button"
@@ -167,8 +172,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img src="/assets/bounce-small-1.jpg" alt="Small toddler bounce house" />
               </div>
               <div className="body">
+                <div className="flex flex-wrap gap-1.5 mb-2">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-300">10×10 ft</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">Ages 1–5</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-200">Soft Bumper</span>
+                </div>
                 <h3>Bounce House — Small</h3>
-                <p>Ideal for toddlers and smaller spaces — all the fun, right-sized for little ones.</p>
+                <p>Ideal for toddlers and smaller backyards — gentle step entry, right-sized for little ones to bounce safely.</p>
                 <span className="price-line">📞 Call for Pricing</span>
                 <button
                   type="button"
@@ -194,8 +204,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img src="/assets/movie-2.jpg" alt="Movie screen setup" />
               </div>
               <div className="body">
+                <div className="flex flex-wrap gap-1.5 mb-2">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-rose-100 text-rose-900 border border-rose-300">16-ft Screen</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">1080p HD</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-purple-100 text-purple-900 border border-purple-200">Soundbar Inc.</span>
+                </div>
                 <h3>Movie Screen + HD Projector</h3>
-                <p>Turn your backyard into a movie theater. Includes big screen, HD projector, and easy setup.</p>
+                <p>Turn your backyard into an outdoor theater. Includes jumbo screen, 4K/HD projector, and Bluetooth audio.</p>
                 <span className="price-line">📞 Call for Pricing</span>
                 <button
                   type="button"
@@ -221,8 +236,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img src="/assets/popcorn-1.jpg" alt="Popcorn cart" />
               </div>
               <div className="body">
+                <div className="flex flex-wrap gap-1.5 mb-2">
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 border border-amber-300">Commercial 8oz</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">Kernel Packs</span>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-200">Bags Included</span>
+                </div>
                 <h3>Popcorn Cart</h3>
-                <p>Fresh, hot popcorn served right at your event — the perfect add-on for movie nights and parties.</p>
+                <p>Fresh, hot theater popcorn served right at your event — the ultimate crowd-pleaser for movies and celebrations.</p>
                 <span className="price-line">📞 Call for Pricing</span>
                 <button
                   type="button"
