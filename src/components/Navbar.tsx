@@ -43,7 +43,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="logo cursor-pointer bg-transparent border-0 text-left p-0"
             title="EventsRentals.io"
           >
-            <span className="logo-mark">🎪</span>
+            <span className="logo-mark" aria-hidden="true">
+              <img
+                src="/assets/events-rentals-tent-logo.svg"
+                alt="Tent Logo"
+                className="w-full h-full object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </span>
             <span>EventsRentals<span className="io">.io</span></span>
           </button>
 

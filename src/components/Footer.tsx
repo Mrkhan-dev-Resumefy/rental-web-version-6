@@ -22,10 +22,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="col">
             <button
               onClick={() => handleNav('home')}
-              className="footer-logo cursor-pointer bg-transparent border-0 text-left p-0"
+              className="footer-logo cursor-pointer bg-transparent border-0 text-left p-0 inline-flex items-center gap-2"
               title="EventsRentals.io"
             >
-              🎪 EventsRentals<span className="io">.io</span>
+              <span className="logo-mark" aria-hidden="true" style={{ width: '28px', height: '28px' }}>
+                <img
+                  src="/assets/events-rentals-tent-logo.svg"
+                  alt="Tent Logo"
+                  className="w-full h-full object-contain"
+                  referrerPolicy="no-referrer"
+                />
+              </span>
+              <span>EventsRentals<span className="io">.io</span></span>
             </button>
             <p>
               Bringing the fun to backyards and events all across Texas. Bounce houses, movie screens, popcorn — booked with a phone call.

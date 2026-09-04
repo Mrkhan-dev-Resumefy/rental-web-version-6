@@ -553,8 +553,20 @@
   text-decoration: none;
 }
 .logo-mark {
-  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
   line-height: 1;
+}
+.logo-mark img,
+.logo-mark svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .logo .io {
   color: var(--sky-600);
