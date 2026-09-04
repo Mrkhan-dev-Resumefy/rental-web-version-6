@@ -706,8 +706,15 @@
 }
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: -12%;
+  bottom: -12%;
+  left: 0;
+  right: 0;
+  height: 124%;
+  width: 100%;
   z-index: 0;
+  will-change: transform;
+  transform: translateY(var(--hero-parallax-y, 0px));
 }
 .hero-slide {
   position: absolute;
@@ -732,6 +739,8 @@
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  will-change: transform;
+  transform: translateY(calc(var(--hero-parallax-y, 0px) * 0.4));
 }
 .hero-shapes .circle {
   position: absolute;
@@ -1139,12 +1148,50 @@
 .reveal-delay-400 { transition-delay: 400ms; }
 .reveal-delay-500 { transition-delay: 500ms; }
 
+/* ============================================
+   HERO BACKGROUND PARALLAX
+   ============================================ */
+@supports (animation-timeline: scroll()) {
+  .hero-bg {
+    animation: heroParallaxScroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 750px;
+  }
+  @keyframes heroParallaxScroll {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(160px);
+    }
+  }
+
+  .hero-shapes {
+    animation: heroShapesParallax linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 750px;
+  }
+  @keyframes heroShapesParallax {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(70px);
+    }
+  }
+}
+
 /* Respect prefers-reduced-motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   .scroll-reveal {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+  .hero-bg,
+  .hero-shapes {
+    animation: none !important;
+    transform: none !important;
   }
 }
 

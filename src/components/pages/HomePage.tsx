@@ -7,10 +7,42 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
+  const heroRef = React.useRef<HTMLElement>(null);
+
+  React.useEffect(() => {
+    // Check if browser natively handles CSS animation-timeline: scroll()
+    const supportsScrollTimeline =
+      typeof CSS !== 'undefined' &&
+      CSS.supports &&
+      CSS.supports('animation-timeline', 'scroll()');
+
+    if (supportsScrollTimeline) return;
+
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (heroRef.current) {
+            const scrollY = window.scrollY;
+            if (scrollY <= 850) {
+              const parallaxY = Math.round(scrollY * 0.3);
+              heroRef.current.style.setProperty('--hero-parallax-y', `${parallaxY}px`);
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div>
       {/* ============ HERO ============ */}
-      <section className="hero">
+      <section className="hero" ref={heroRef}>
         <div className="hero-bg">
           <div
             className="hero-slide"
