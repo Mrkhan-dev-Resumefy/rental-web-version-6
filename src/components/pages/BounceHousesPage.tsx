@@ -42,21 +42,21 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/bounce-large-1.jpg?v=upload-1"
+                  src="/assets/bounce-large-1.jpg?v=upload-2"
                   alt="Large bounce house main view"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-large-2.jpg?v=upload-1"
+                  src="/assets/bounce-large-2.jpg?v=upload-2"
                   alt="Large bounce house side view"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-large-3.jpg"
+                  src="/assets/bounce-large-3.jpg?v=upload-2"
                   alt="Large bounce house rainbow"
                   className="w-full h-full object-cover"
                 />
@@ -105,16 +105,24 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/bounce-small-1.jpg?v=upload-1"
+                  src="/assets/bounce-small-1.jpg?v=upload-2"
                   alt="Small toddler bounce house"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/bounce-small-2.jpg" alt="Toddler bounce house play" />
+                <img
+                  src="/assets/bounce-small-2.jpg?v=upload-2"
+                  alt="Toddler bounce house play"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/bounce-small-3.jpg" alt="Toddler castle bounce" />
+                <img
+                  src="/assets/bounce-small-3.jpg"
+                  alt="Toddler castle bounce"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="details">

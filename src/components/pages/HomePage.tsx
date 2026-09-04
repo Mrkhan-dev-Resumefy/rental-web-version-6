@@ -137,7 +137,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Most Popular</span>
-                <img src="/assets/bounce-large-1.jpg?v=upload-1" alt="Large bounce house" />
+                <img src="/assets/bounce-large-1.jpg?v=upload-2" alt="Large bounce house" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -169,7 +169,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker green">Toddler-Safe</span>
-                <img src="/assets/bounce-small-1.jpg?v=upload-1" alt="Small toddler bounce house" />
+                <img src="/assets/bounce-small-1.jpg?v=upload-2" alt="Small toddler bounce house" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -201,7 +201,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker red">Movie Night</span>
-                <img src="/assets/movie-2.jpg?v=upload-1" alt="Movie screen setup" />
+                <img src="/assets/movie-2.jpg?v=upload-2" alt="Movie screen setup" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -233,7 +233,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Fan Favorite</span>
-                <img src="/assets/popcorn-1.jpg?v=upload-1" alt="Popcorn cart" />
+                <img src="/assets/popcorn-1.jpg?v=upload-2" alt="Popcorn cart" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -382,7 +382,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 key={i}
                 className="aspect-square overflow-hidden rounded-2xl border-[3px] border-[#0F172A] shadow-[4px_4px_0_#0F172A] relative group transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 hover:rotate-[-1deg] hover:shadow-[6px_6px_0_#0F172A] bg-[#BAE6FD] scroll-reveal"
               >
-                <img src={tile.img} alt={tile.alt} className="w-full h-full object-cover" />
+                <img src={`${tile.img}?v=upload-2`} alt={tile.alt} className="w-full h-full object-cover" />
                 <div className="overlay">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

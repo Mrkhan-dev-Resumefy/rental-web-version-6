@@ -27,13 +27,17 @@ export const MovieScreenPage: React.FC<MovieScreenPageProps> = ({ onNavigate }) 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/movie-2.jpg?v=upload-1"
+                  src="/assets/movie-2.jpg?v=upload-2"
                   alt="Outdoor movie screen at dusk"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/movie-1.jpg" alt="Movie screen setup" />
+                <img
+                  src="/assets/movie-1.jpg?v=upload-2"
+                  alt="Movie screen setup"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
                 <img src="/assets/movie-3.jpg" alt="Backyard movie night" />

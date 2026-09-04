@@ -27,16 +27,24 @@ export const PopcornCartPage: React.FC<PopcornCartPageProps> = ({ onNavigate }) 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/popcorn-1.jpg?v=upload-1"
+                  src="/assets/popcorn-1.jpg?v=upload-2"
                   alt="Vintage popcorn cart"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/popcorn-2.jpg" alt="Popcorn cart red" />
+                <img
+                  src="/assets/popcorn-2.jpg?v=upload-2"
+                  alt="Popcorn cart red"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/popcorn-3.jpg" alt="Popcorn cart wheels" />
+                <img
+                  src="/assets/popcorn-3.jpg?v=upload-2"
+                  alt="Popcorn cart wheels"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
