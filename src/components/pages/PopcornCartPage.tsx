@@ -26,7 +26,11 @@ export const PopcornCartPage: React.FC<PopcornCartPageProps> = ({ onNavigate }) 
           <div className="product-block reverse scroll-reveal">
             <div className="gallery">
               <div className="main">
-                <img src="/assets/popcorn-1.jpg" alt="Vintage popcorn cart" />
+                <img
+                  src="/assets/popcorn-1.jpg?v=upload-1"
+                  alt="Vintage popcorn cart"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
                 <img src="/assets/popcorn-2.jpg" alt="Popcorn cart red" />

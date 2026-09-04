@@ -26,7 +26,11 @@ export const MovieScreenPage: React.FC<MovieScreenPageProps> = ({ onNavigate }) 
           <div className="product-block scroll-reveal">
             <div className="gallery">
               <div className="main">
-                <img src="/assets/movie-2.jpg" alt="Outdoor movie screen at dusk" />
+                <img
+                  src="/assets/movie-2.jpg?v=upload-1"
+                  alt="Outdoor movie screen at dusk"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
                 <img src="/assets/movie-1.jpg" alt="Movie screen setup" />

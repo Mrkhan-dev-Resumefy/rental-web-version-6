@@ -137,7 +137,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Most Popular</span>
-                <img src="/assets/bounce-large-1.jpg" alt="Large bounce house" />
+                <img src="/assets/bounce-large-1.jpg?v=upload-1" alt="Large bounce house" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -169,7 +169,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker green">Toddler-Safe</span>
-                <img src="/assets/bounce-small-1.jpg" alt="Small toddler bounce house" />
+                <img src="/assets/bounce-small-1.jpg?v=upload-1" alt="Small toddler bounce house" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -201,7 +201,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker red">Movie Night</span>
-                <img src="/assets/movie-2.jpg" alt="Movie screen setup" />
+                <img src="/assets/movie-2.jpg?v=upload-1" alt="Movie screen setup" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -233,7 +233,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Fan Favorite</span>
-                <img src="/assets/popcorn-1.jpg" alt="Popcorn cart" />
+                <img src="/assets/popcorn-1.jpg?v=upload-1" alt="Popcorn cart" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">

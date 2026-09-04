@@ -41,13 +41,25 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
           <div className="product-block scroll-reveal" id="large">
             <div className="gallery">
               <div className="main">
-                <img src="/assets/bounce-large-1.jpg" alt="Large bounce house main view" />
+                <img
+                  src="/assets/bounce-large-1.jpg?v=upload-1"
+                  alt="Large bounce house main view"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/bounce-large-2.jpg" alt="Large bounce house side view" />
+                <img
+                  src="/assets/bounce-large-2.jpg?v=upload-1"
+                  alt="Large bounce house side view"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
-                <img src="/assets/bounce-large-3.jpg" alt="Large bounce house rainbow" />
+                <img
+                  src="/assets/bounce-large-3.jpg"
+                  alt="Large bounce house rainbow"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="details">
@@ -92,7 +104,11 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
           <div className="product-block reverse scroll-reveal" id="small">
             <div className="gallery">
               <div className="main">
-                <img src="/assets/bounce-small-1.jpg" alt="Small toddler bounce house" />
+                <img
+                  src="/assets/bounce-small-1.jpg?v=upload-1"
+                  alt="Small toddler bounce house"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="thumb-sm">
                 <img src="/assets/bounce-small-2.jpg" alt="Toddler bounce house play" />
