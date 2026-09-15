@@ -42,12 +42,57 @@
         "addressRegion": "TX",
         "addressCountry": "US"
       },
-      "areaServed": "Texas",
-      "description": "Texas's premier party rental company providing bounce houses, outdoor cinema screens, and popcorn carts.",
+      "areaServed": {
+        "@type": "State",
+        "name": "Texas"
+      },
+      "description": "Texas's premier party rental company providing commercial bounce houses, outdoor cinema screens, and popcorn carts.",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "300"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Texas Party & Event Equipment Rentals",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Commercial Bounce House — Large (15x15 ft)",
+              "description": "Commercial PVC bounce house for backyard parties and group celebrations.",
+              "image": "https://eventsrentals.io/assets/bounce-large-1.webp"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Toddler Bounce House — Small (10x10 ft)",
+              "description": "Low-step safe bounce house for toddlers and young children.",
+              "image": "https://eventsrentals.io/assets/bounce-small-1.webp"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "16-ft Outdoor Movie Screen + HD Projector & Soundbar",
+              "description": "Jumbo 16-foot inflatable movie screen with 1080p HD projector and Bluetooth audio.",
+              "image": "https://eventsrentals.io/assets/movie-2.webp"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Vintage Cinema Popcorn Cart",
+              "description": "Commercial 8oz heated popcorn cart with kernels and serving bags included.",
+              "image": "https://eventsrentals.io/assets/popcorn-1.webp"
+            }
+          }
+        ]
       }
     }
     </script>
@@ -76,7 +121,276 @@
     </script>
   </head>
   <body class="bg-[#FFFDF4] text-slate-900 antialiased font-['Nunito',sans-serif] selection:bg-red-200 selection:text-red-900">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Pre-rendered Semantic HTML for Search Engines & Non-JS Crawlers (Bing, Googlebot, Facebook, LinkedIn, Social Bots) -->
+      <header class="bg-white border-b-4 border-[#0F172A] py-3 px-4 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 no-underline">
+            <img src="/logo.png" alt="EventsRentals.io Logo" width="180" height="40" class="h-10 w-auto object-contain" />
+          </a>
+          <nav class="hidden md:flex items-center gap-6 font-bold text-slate-800" aria-label="Main Navigation">
+            <a href="/" class="hover:text-amber-600 transition-colors">Home</a>
+            <a href="/bounce-houses" class="hover:text-amber-600 transition-colors">Bounce Houses</a>
+            <a href="/movie-screens" class="hover:text-amber-600 transition-colors">Movie Screens</a>
+            <a href="/popcorn" class="hover:text-amber-600 transition-colors">Popcorn Cart</a>
+            <a href="/contact" class="hover:text-amber-600 transition-colors">Book Now</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a href="tel:+14699942172" class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#FACC15] text-[#0F172A] font-black rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A] hover:bg-amber-400 text-sm">
+              📞 (469) 994-2172
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section py-16 px-4 bg-gradient-to-b from-[#FFFDF4] to-[#FEF9C3] border-b-4 border-[#0F172A]">
+          <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 bg-amber-100 text-amber-900 border-2 border-[#0F172A] rounded-full font-bold text-sm mb-4 shadow-[2px_2px_0_#0F172A]">
+              ⭐ Rated 4.9/5 by 300+ Texas Celebrations
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-[#0F172A] tracking-tight mb-4">
+              Welcome to <span class="text-amber-500 underline decoration-[#0F172A]">EventsRentals.io</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-bold text-slate-700 mb-4">
+              Texas's Premier Party &amp; Event Equipment Rentals 🤠
+            </p>
+            <p class="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+              We deliver pure excitement straight to your backyard — commercial bounce houses, giant outdoor cinema screens, and fresh cinema popcorn carts. Clean, sanitized equipment with instant booking by phone, text, or WhatsApp.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-6">
+              <a href="tel:+14699942172" class="px-6 py-3.5 bg-[#FACC15] text-[#0F172A] font-black text-lg rounded-2xl border-3 border-[#0F172A] shadow-[4px_4px_0_#0F172A] hover:translate-x-0.5 hover:translate-y-0.5">
+                📞 Call to Book: (469) 994-2172
+              </a>
+              <a href="https://wa.me/14699942172?text=Hi!%20I%20would%20like%20to%20inquire%20about%20party%20rentals." target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-[#22C55E] text-white font-black text-lg rounded-2xl border-3 border-[#0F172A] shadow-[4px_4px_0_#0F172A]">
+                💬 WhatsApp Us
+              </a>
+              <a href="sms:+14699942172" class="px-6 py-3.5 bg-white text-[#0F172A] font-black text-lg rounded-2xl border-3 border-[#0F172A] shadow-[4px_4px_0_#0F172A]">
+                ✉️ Text Us
+              </a>
+            </div>
+            <p class="text-sm font-bold text-slate-700">
+              🚚 Free Delivery &amp; Setup • 🛡️ 100% Sanitized &amp; Commercial-Grade • 🤠 Serving All of Texas
+            </p>
+          </div>
+        </section>
+
+        <!-- Product Catalog Section -->
+        <section class="py-16 px-4 max-w-6xl mx-auto" id="rentals">
+          <div class="text-center mb-12">
+            <span class="inline-block px-3 py-1 bg-sky-100 text-sky-900 font-bold rounded-lg border border-sky-300 text-xs mb-2">WHAT WE RENT</span>
+            <h2 class="text-3xl md:text-4xl font-black text-[#0F172A]">The Fun, Delivered.</h2>
+            <p class="text-slate-600 mt-2 text-lg">Commercial bounce houses, cinema packages, and concession equipment delivered and set up for you.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Large Bounce House -->
+            <article class="bg-white rounded-2xl border-3 border-[#0F172A] p-5 shadow-[4px_4px_0_#0F172A] flex flex-col justify-between">
+              <div>
+                <span class="inline-block px-2 py-0.5 bg-amber-400 text-[#0F172A] font-extrabold text-xs rounded border border-[#0F172A] mb-3">MOST POPULAR</span>
+                <img src="/assets/bounce-large-1.webp" alt="Commercial Large Bounce House Rental Texas" class="w-full h-48 object-cover rounded-xl border-2 border-[#0F172A] mb-4" />
+                <h3 class="text-xl font-black text-[#0F172A] mb-2">Bounce House — Large (15×15 ft)</h3>
+                <p class="text-sm text-slate-600 mb-3 leading-relaxed">
+                  Perfect for big backyard birthday parties, block celebrations, and school events. Built from heavy-duty commercial PVC vinyl with full safety netting. Ages 3–12.
+                </p>
+                <ul class="text-xs text-slate-700 font-bold space-y-1 mb-4">
+                  <li>✔ Dimensions: 15ft W × 15ft L × 14ft H</li>
+                  <li>✔ Free delivery, anchor setup &amp; blower included</li>
+                  <li>✔ Hospital-grade sanitized before every event</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-extrabold text-[#0F172A] text-sm mb-3">📞 Call (469) 994-2172 for Pricing</p>
+                <a href="/contact" class="block text-center py-2.5 bg-[#0EA5E9] text-white font-bold rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">Book Large Bounce →</a>
+              </div>
+            </article>
+
+            <!-- Small Bounce House -->
+            <article class="bg-white rounded-2xl border-3 border-[#0F172A] p-5 shadow-[4px_4px_0_#0F172A] flex flex-col justify-between">
+              <div>
+                <span class="inline-block px-2 py-0.5 bg-emerald-400 text-[#0F172A] font-extrabold text-xs rounded border border-[#0F172A] mb-3">TODDLER-SAFE</span>
+                <img src="/assets/bounce-small-1.webp" alt="Toddler Bounce House Rental Texas" class="w-full h-48 object-cover rounded-xl border-2 border-[#0F172A] mb-4" />
+                <h3 class="text-xl font-black text-[#0F172A] mb-2">Bounce House — Small (10×10 ft)</h3>
+                <p class="text-sm text-slate-600 mb-3 leading-relaxed">
+                  Ideal for toddlers, preschoolers, and compact Texas yards or indoor party spaces. Features low deck entry, soft bumpers, and open visibility for parents. Ages 1–5.
+                </p>
+                <ul class="text-xs text-slate-700 font-bold space-y-1 mb-4">
+                  <li>✔ Dimensions: 10ft W × 10ft L × 8ft H</li>
+                  <li>✔ Low-step safety access ramp</li>
+                  <li>✔ Sanitized &amp; safe for little jumpers</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-extrabold text-[#0F172A] text-sm mb-3">📞 Call (469) 994-2172 for Pricing</p>
+                <a href="/contact" class="block text-center py-2.5 bg-[#FACC15] text-[#0F172A] font-bold rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">Book Toddler Bounce →</a>
+              </div>
+            </article>
+
+            <!-- Outdoor Movie Screen -->
+            <article class="bg-white rounded-2xl border-3 border-[#0F172A] p-5 shadow-[4px_4px_0_#0F172A] flex flex-col justify-between">
+              <div>
+                <span class="inline-block px-2 py-0.5 bg-rose-400 text-white font-extrabold text-xs rounded border border-[#0F172A] mb-3">MOVIE NIGHT</span>
+                <img src="/assets/movie-2.webp" alt="Outdoor Inflatable Movie Screen and Projector Rental" class="w-full h-48 object-cover rounded-xl border-2 border-[#0F172A] mb-4" />
+                <h3 class="text-xl font-black text-[#0F172A] mb-2">16-ft Movie Screen + HD Projector</h3>
+                <p class="text-sm text-slate-600 mb-3 leading-relaxed">
+                  Turn your backyard, church, or community into an open-air cinema. Package includes giant 16ft inflatable screen, bright 1080p/4K projector, and high-fidelity Bluetooth soundbar.
+                </p>
+                <ul class="text-xs text-slate-700 font-bold space-y-1 mb-4">
+                  <li>✔ 16-foot diagonal wide projection screen</li>
+                  <li>✔ Connects to Firestick, Apple TV, HDMI, consoles</li>
+                  <li>✔ Full audio sound system included</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-extrabold text-[#0F172A] text-sm mb-3">📞 Call (469) 994-2172 for Pricing</p>
+                <a href="/contact" class="block text-center py-2.5 bg-[#EF4444] text-white font-bold rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">Book Movie Screen →</a>
+              </div>
+            </article>
+
+            <!-- Popcorn Cart -->
+            <article class="bg-white rounded-2xl border-3 border-[#0F172A] p-5 shadow-[4px_4px_0_#0F172A] flex flex-col justify-between">
+              <div>
+                <span class="inline-block px-2 py-0.5 bg-amber-300 text-[#0F172A] font-extrabold text-xs rounded border border-[#0F172A] mb-3">FAN FAVORITE</span>
+                <img src="/assets/popcorn-1.webp" alt="Vintage Theater Popcorn Cart Rental" class="w-full h-48 object-cover rounded-xl border-2 border-[#0F172A] mb-4" />
+                <h3 class="text-xl font-black text-[#0F172A] mb-2">Vintage Theater Popcorn Cart</h3>
+                <p class="text-sm text-slate-600 mb-3 leading-relaxed">
+                  Fresh, hot cinema popcorn popping live at your gathering. Classic carnival cart with commercial 8oz kettle, kernel pre-packs, oil, butter seasoning, and serving bags.
+                </p>
+                <ul class="text-xs text-slate-700 font-bold space-y-1 mb-4">
+                  <li>✔ Commercial 8-oz heated popping kettle</li>
+                  <li>✔ Popcorn kernels and serving bags included</li>
+                  <li>✔ Authentic nostalgic circus red cart design</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-extrabold text-[#0F172A] text-sm mb-3">📞 Call (469) 994-2172 for Pricing</p>
+                <a href="/contact" class="block text-center py-2.5 bg-white text-[#0F172A] font-bold rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">Book Popcorn Cart →</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Trust & Guarantees Section -->
+        <section class="py-14 bg-white border-y-4 border-[#0F172A] px-4">
+          <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-black text-center text-[#0F172A] mb-8">Why Texas Families Choose EventsRentals.io</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div class="p-4 border-2 border-[#0F172A] rounded-xl bg-amber-50 shadow-[2px_2px_0_#0F172A]">
+                <div class="text-3xl mb-2">🚚</div>
+                <h3 class="font-black text-lg text-[#0F172A]">Free Delivery &amp; Setup</h3>
+                <p class="text-sm text-slate-600 mt-1">We bring everything directly to your venue, inflate, secure, and inspect. When you're done, we pack it all up.</p>
+              </div>
+              <div class="p-4 border-2 border-[#0F172A] rounded-xl bg-emerald-50 shadow-[2px_2px_0_#0F172A]">
+                <div class="text-3xl mb-2">🛡️</div>
+                <h3 class="font-black text-lg text-[#0F172A]">Hospital-Grade Sanitized</h3>
+                <p class="text-sm text-slate-600 mt-1">Every inflatable and concession machine is thoroughly disinfected before and after every rental.</p>
+              </div>
+              <div class="p-4 border-2 border-[#0F172A] rounded-xl bg-sky-50 shadow-[2px_2px_0_#0F172A]">
+                <div class="text-3xl mb-2">📞</div>
+                <h3 class="font-black text-lg text-[#0F172A]">Personal Phone Confirmation</h3>
+                <p class="text-sm text-slate-600 mt-1">No automated surprises. A dedicated rental coordinator confirms your date, time, and setup requirements.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-16 px-4 max-w-5xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-black text-[#0F172A]">Booking Is Easy As 1-2-3</h2>
+            <p class="text-slate-600 mt-2">No complicated web checkouts. Simple Texas hospitality.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white border-3 border-[#0F172A] rounded-2xl shadow-[4px_4px_0_#0F172A]">
+              <div class="w-10 h-10 rounded-full bg-[#FACC15] text-[#0F172A] font-black text-xl flex items-center justify-center border-2 border-[#0F172A] mb-3">1</div>
+              <h3 class="text-xl font-bold text-[#0F172A] mb-2">Reach Out</h3>
+              <p class="text-slate-600 text-sm">Call, text, or WhatsApp us at <strong>(469) 994-2172</strong> or submit our booking inquiry form with your date and city.</p>
+            </div>
+            <div class="p-6 bg-white border-3 border-[#0F172A] rounded-2xl shadow-[4px_4px_0_#0F172A]">
+              <div class="w-10 h-10 rounded-full bg-[#38BDF8] text-[#0F172A] font-black text-xl flex items-center justify-center border-2 border-[#0F172A] mb-3">2</div>
+              <h3 class="text-xl font-bold text-[#0F172A] mb-2">We Confirm</h3>
+              <p class="text-slate-600 text-sm">We verify equipment availability, provide a transparent flat quote, and reserve your date on our delivery schedule.</p>
+            </div>
+            <div class="p-6 bg-white border-3 border-[#0F172A] rounded-2xl shadow-[4px_4px_0_#0F172A]">
+              <div class="w-10 h-10 rounded-full bg-[#22C55E] text-white font-black text-xl flex items-center justify-center border-2 border-[#0F172A] mb-3">3</div>
+              <h3 class="text-xl font-bold text-[#0F172A] mb-2">We Deliver &amp; Setup</h3>
+              <p class="text-slate-600 text-sm">Our crew arrives early, sets up and safety-anchors your bounce house or cinema screen, and returns after your event.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Texas Service Areas -->
+        <section class="py-12 bg-slate-900 text-white px-4">
+          <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-black mb-4">Serving Communities Across Texas</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm md:text-base mb-6">
+              Delivering party rentals to Dallas, Fort Worth, Arlington, Plano, Frisco, McKinney, Irving, Garland, Grand Prairie, Denton, Richardson, Carrollton, Lewisville, Allen, and surrounding Texas regions.
+            </p>
+            <div class="flex flex-wrap justify-center gap-2 text-xs font-bold text-amber-300">
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">Dallas, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">Fort Worth, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">Arlington, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">Plano, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">Frisco, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">McKinney, TX</span>
+              <span class="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">All of Texas</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section for Crawlers -->
+        <section class="py-16 px-4 max-w-4xl mx-auto" id="faq">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-black text-[#0F172A]">Frequently Asked Questions</h2>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">
+              <h3 class="font-bold text-lg text-[#0F172A] mb-1">What is included with a bounce house rental?</h3>
+              <p class="text-slate-600 text-sm">Every rental includes commercial-grade inflatable, heavy-duty commercial blower, ground tarp, safety anchor stakes/weights, heavy extension cords, and professional delivery, setup, and teardown.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">
+              <h3 class="font-bold text-lg text-[#0F172A] mb-1">How do I book equipment for my date?</h3>
+              <p class="text-slate-600 text-sm">Simply call or text us at (469) 994-2172, or send a message via WhatsApp. We will confirm date availability and delivery timing directly with you.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border-2 border-[#0F172A] shadow-[2px_2px_0_#0F172A]">
+              <h3 class="font-bold text-lg text-[#0F172A] mb-1">What happens if it rains on the event date?</h3>
+              <p class="text-slate-600 text-sm">We provide a flexible weather policy. If high winds or rain are forecasted, you can reschedule to an alternate available date without cancellation penalties.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-slate-900 text-white py-12 px-4 border-t-4 border-[#0F172A]">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+          <div>
+            <p class="font-black text-xl text-amber-400">EventsRentals.io</p>
+            <p class="text-slate-400 text-sm mt-1">Texas's Trusted Event &amp; Party Equipment Rentals.</p>
+            <p class="text-slate-400 text-sm">Phone: <a href="tel:+14699942172" class="text-white hover:underline">(469) 994-2172</a> | Email: <a href="mailto:Hello@eventsrentals.io" class="text-white hover:underline">Hello@eventsrentals.io</a></p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-300 font-bold">
+            <a href="/" class="hover:text-amber-400">Home</a>
+            <a href="/bounce-houses" class="hover:text-amber-400">Bounce Houses</a>
+            <a href="/movie-screens" class="hover:text-amber-400">Movie Screens</a>
+            <a href="/popcorn" class="hover:text-amber-400">Popcorn Cart</a>
+            <a href="/privacy" class="hover:text-amber-400">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="max-w-5xl mx-auto mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+          © 2026 EventsRentals.io. All rights reserved. Registered Texas Local Business.
+        </div>
+      </footer>
+    </div>
+
+    <!-- Noscript fallback for bots and users without JavaScript -->
+    <noscript>
+      <div style="background:#FFFDF4;color:#0F172A;padding:20px;text-align:center;font-family:sans-serif;">
+        <h2>EventsRentals.io — Texas Party &amp; Event Equipment Rentals</h2>
+        <p>Commercial bounce houses, outdoor movie screens, and vintage popcorn carts delivered and installed across Texas.</p>
+        <p><strong>Call or Text to Book: (469) 994-2172 | Email: Hello@eventsrentals.io</strong></p>
+        <p><a href="tel:+14699942172">Call Us Now</a> | <a href="/privacy">Privacy Policy</a></p>
+      </div>
+    </noscript>
     <div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:white;padding:1rem;z-index:1000;">
       <p>We use cookies for analytics. <a href="/privacy" style="color:#fbbf24;">Privacy Policy</a></p>
       <button onclick="this.parentElement.remove()">Accept</button>
