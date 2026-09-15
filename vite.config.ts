@@ -1,11 +1,18 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
+import prerender from 'vite-plugin-prerender';
 import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      prerender({
+        routes: ['/', '/bounce-houses', '/movie-screens', '/popcorn', '/contact'],
+      }),
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

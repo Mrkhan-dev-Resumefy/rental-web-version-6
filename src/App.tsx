@@ -10,8 +10,24 @@ import { PopcornCartPage } from './components/pages/PopcornCartPage';
 import { ContactPage } from './components/pages/ContactPage';
 import { useScrollReveal } from './utils/useScrollReveal';
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState<PageId>('home');
+interface AppProps {
+  initialPage?: PageId;
+}
+
+export default function App({ initialPage }: AppProps = {}) {
+  const getInitialPage = (): PageId => {
+    if (initialPage) return initialPage;
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname.replace(/^\/|\/$/g, '');
+      if (path === 'bounce-houses') return 'bounce-houses';
+      if (path === 'movie-screens' || path === 'movie-screen') return 'movie-screen';
+      if (path === 'popcorn' || path === 'popcorn-cart') return 'popcorn-cart';
+      if (path === 'contact' || path === 'booking') return 'contact';
+    }
+    return 'home';
+  };
+
+  const [currentPage, setCurrentPage] = useState<PageId>(getInitialPage);
   const [preSelectedItem, setPreSelectedItem] = useState<string | undefined>(undefined);
 
   // Initialize scroll-reveal observer across page switches
