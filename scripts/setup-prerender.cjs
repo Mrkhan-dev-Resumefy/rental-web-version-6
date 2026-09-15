@@ -80,7 +80,7 @@ function vitePrerender(options) {
         const cleanRoute = route.replace(/^\\/|\\/$/g, '');
         if (cleanRoute === 'bounce-houses') initialPage = 'bounce-houses';
         else if (cleanRoute === 'movie-screens' || cleanRoute === 'movie-screen') initialPage = 'movie-screen';
-        else if (cleanRoute === 'popcorn' || cleanRoute === 'popcorn-cart') initialPage = 'popcorn-cart';
+        else if (cleanRoute === 'popcorn' || cleanRoute === 'popcorn-cart' || cleanRoute === 'popcorn-machines' || cleanRoute === 'cotton-candy') initialPage = 'popcorn-cart';
         else if (cleanRoute === 'contact' || cleanRoute === 'booking') initialPage = 'contact';
 
         let renderedApp = '';
@@ -202,7 +202,7 @@ export default function vitePrerender(options) {
         const cleanRoute = route.replace(/^\\/|\\/$/g, '');
         if (cleanRoute === 'bounce-houses') initialPage = 'bounce-houses';
         else if (cleanRoute === 'movie-screens' || cleanRoute === 'movie-screen') initialPage = 'movie-screen';
-        else if (cleanRoute === 'popcorn' || cleanRoute === 'popcorn-cart') initialPage = 'popcorn-cart';
+        else if (cleanRoute === 'popcorn' || cleanRoute === 'popcorn-cart' || cleanRoute === 'popcorn-machines' || cleanRoute === 'cotton-candy') initialPage = 'popcorn-cart';
         else if (cleanRoute === 'contact' || cleanRoute === 'booking') initialPage = 'contact';
 
         let renderedApp = '';

@@ -10,7 +10,20 @@ export default defineConfig(() => {
       react(),
       tailwindcss(),
       prerender({
-        routes: ['/', '/bounce-houses', '/movie-screens', '/popcorn', '/contact'],
+        routes: [
+          '/',
+          '/bounce-houses',
+          '/movie-screens',
+          '/popcorn-machines',
+          '/cotton-candy',
+          '/booking',
+          '/about',
+          '/contact',
+          '/faq',
+          '/reviews',
+          '/service-areas',
+          '/popcorn',
+        ],
       }),
     ],
     resolve: {

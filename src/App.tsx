@@ -21,8 +21,9 @@ export default function App({ initialPage }: AppProps = {}) {
       const path = window.location.pathname.replace(/^\/|\/$/g, '');
       if (path === 'bounce-houses') return 'bounce-houses';
       if (path === 'movie-screens' || path === 'movie-screen') return 'movie-screen';
-      if (path === 'popcorn' || path === 'popcorn-cart') return 'popcorn-cart';
+      if (path === 'popcorn' || path === 'popcorn-cart' || path === 'popcorn-machines' || path === 'cotton-candy') return 'popcorn-cart';
       if (path === 'contact' || path === 'booking') return 'contact';
+      return 'home';
     }
     return 'home';
   };
