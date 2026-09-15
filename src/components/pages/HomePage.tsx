@@ -46,19 +46,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="hero-bg">
           <div
             className="hero-slide"
-            style={{ backgroundImage: "url('/assets/bounce-large-1.jpg')" }}
+            style={{ backgroundImage: "url('/hero-bounce-house.webp')" }}
           />
           <div
             className="hero-slide"
-            style={{ backgroundImage: "url('/assets/bounce-small-1.jpg')" }}
+            style={{ backgroundImage: "url('/assets/bounce-small-1.webp')" }}
           />
           <div
             className="hero-slide"
-            style={{ backgroundImage: "url('/assets/movie-2.jpg')" }}
+            style={{ backgroundImage: "url('/assets/movie-2.webp')" }}
           />
           <div
             className="hero-slide"
-            style={{ backgroundImage: "url('/assets/popcorn-1.jpg')" }}
+            style={{ backgroundImage: "url('/assets/popcorn-1.webp')" }}
           />
         </div>
         <div className="hero-scrim" />
@@ -137,7 +137,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Most Popular</span>
-                <img src="/assets/bounce-large-1.jpg?v=upload-2" alt="Large bounce house" />
+                <img src="/assets/bounce-large-1.webp" alt="Large bounce house" loading="lazy" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -169,7 +169,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker green">Toddler-Safe</span>
-                <img src="/assets/bounce-small-1.jpg?v=upload-2" alt="Small toddler bounce house" />
+                <img src="/assets/bounce-small-1.webp" alt="Small toddler bounce house" loading="lazy" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -201,7 +201,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker red">Movie Night</span>
-                <img src="/assets/movie-2.jpg?v=upload-2" alt="Movie screen setup" />
+                <img src="/assets/movie-2.webp" alt="Movie screen setup" loading="lazy" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -233,7 +233,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
               <div className="thumb">
                 <span className="tag-sticker">Fan Favorite</span>
-                <img src="/assets/popcorn-1.jpg?v=upload-2" alt="Popcorn cart" />
+                <img src="/assets/popcorn-1.webp" alt="Popcorn cart" loading="lazy" />
               </div>
               <div className="body">
                 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -365,24 +365,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
           <div className="ig-grid">
             {[
-              { img: '/assets/bounce-large-1.jpg', alt: 'Large bounce house at party' },
-              { img: '/assets/bounce-large-2.jpg', alt: 'Party' },
-              { img: '/assets/movie-1.jpg', alt: 'Movie night' },
-              { img: '/assets/popcorn-1.jpg', alt: 'Popcorn cart' },
-              { img: '/assets/party-1.jpg', alt: 'Backyard party' },
-              { img: '/assets/bounce-small-1.jpg', alt: 'Small bounce' },
-              { img: '/assets/movie-2.jpg', alt: 'Movie screen' },
-              { img: '/assets/popcorn-2.jpg', alt: 'Popcorn' },
-              { img: '/assets/bounce-large-3.jpg', alt: 'Bounce' },
-              { img: '/assets/bounce-small-2.jpg', alt: 'Toddler bounce' },
-              { img: '/assets/party-2.jpg', alt: 'Party rentals' },
-              { img: '/assets/popcorn-3.jpg', alt: 'Popcorn machine' },
+              { img: '/assets/bounce-large-1.webp', alt: 'Large bounce house at party' },
+              { img: '/assets/bounce-large-2.webp', alt: 'Party' },
+              { img: '/assets/movie-1.webp', alt: 'Movie night' },
+              { img: '/assets/popcorn-1.webp', alt: 'Popcorn cart' },
+              { img: '/assets/party-1.webp', alt: 'Backyard party' },
+              { img: '/assets/bounce-small-1.webp', alt: 'Small bounce' },
+              { img: '/assets/movie-2.webp', alt: 'Movie screen' },
+              { img: '/assets/popcorn-2.webp', alt: 'Popcorn' },
+              { img: '/assets/bounce-large-3.webp', alt: 'Bounce' },
+              { img: '/assets/bounce-small-2.webp', alt: 'Toddler bounce' },
+              { img: '/assets/party-2.webp', alt: 'Party rentals' },
+              { img: '/assets/popcorn-3.webp', alt: 'Popcorn machine' },
             ].map((tile, i) => (
               <div
                 key={i}
                 className="aspect-square overflow-hidden rounded-2xl border-[3px] border-[#0F172A] shadow-[4px_4px_0_#0F172A] relative group transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 hover:rotate-[-1deg] hover:shadow-[6px_6px_0_#0F172A] bg-[#BAE6FD] scroll-reveal"
               >
-                <img src={`${tile.img}?v=upload-2`} alt={tile.alt} className="w-full h-full object-cover" />
+                <img src={tile.img} alt={tile.alt} loading="lazy" className="w-full h-full object-cover" />
                 <div className="overlay">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

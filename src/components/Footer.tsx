@@ -29,6 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <img
                   src="/assets/events-rentals-tent-logo.svg"
                   alt="Tent Logo"
+                  loading="lazy"
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />

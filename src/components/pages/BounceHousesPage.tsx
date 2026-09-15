@@ -42,22 +42,25 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/bounce-large-1.jpg?v=upload-2"
+                  src="/assets/bounce-large-1.webp"
                   alt="Large bounce house main view"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-large-2.jpg?v=upload-2"
+                  src="/assets/bounce-large-2.webp"
                   alt="Large bounce house side view"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-large-3.jpg?v=upload-2"
+                  src="/assets/bounce-large-3.webp"
                   alt="Large bounce house rainbow"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -105,22 +108,25 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
             <div className="gallery">
               <div className="main">
                 <img
-                  src="/assets/bounce-small-1.jpg?v=upload-2"
+                  src="/assets/bounce-small-1.webp"
                   alt="Small toddler bounce house"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-small-2.jpg?v=upload-2"
+                  src="/assets/bounce-small-2.webp"
                   alt="Toddler bounce house play"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="thumb-sm">
                 <img
-                  src="/assets/bounce-small-3.jpg"
+                  src="/assets/bounce-small-3.webp"
                   alt="Toddler castle bounce"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
