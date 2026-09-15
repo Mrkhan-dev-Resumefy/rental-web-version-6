@@ -6,6 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="/logo-icon.svg" />
     <link rel="alternate icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0F172A" />
     <link rel="canonical" href="https://eventsrentals.io/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <title>EventsRentals.io — Bounce Houses, Movie Screens & Popcorn | All of Texas</title>
@@ -79,6 +81,19 @@
       <button onclick="this.parentElement.remove()">Accept</button>
     </div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(reg) {
+              console.log('[EventsRentals SW] Registered with scope:', reg.scope);
+            })
+            .catch(function(err) {
+              console.warn('[EventsRentals SW] Registration failed:', err);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
 

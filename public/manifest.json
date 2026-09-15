@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "EventsRentals.io — Texas Party Rentals",
+  "short_name": "EventsRentals",
+  "description": "Clean, commercial-grade bounce houses, outdoor cinema screens, and popcorn carts delivered across Texas.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0F172A",
+  "background_color": "#FFFDF4",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
