@@ -45,9 +45,9 @@ export const TrustStrip: React.FC = () => {
           <span className="eyebrow mb-3">
             <span className="dot" /> The EventsRentals.io Guarantee
           </span>
-          <h3 className="text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">
             Kid-Approved Fun, Zero Stress for Texas Families
-          </h3>
+          </h2>
           <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto mt-2">
             Every booking includes white-glove setup, professional grade equipment, and transparent pricing.
           </p>
@@ -68,9 +68,9 @@ export const TrustStrip: React.FC = () => {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-[15px] font-bold font-display text-slate-900 tracking-tight leading-snug">
+                  <h3 className="text-[15px] font-bold font-display text-slate-900 tracking-tight leading-snug">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-[12.5px] text-slate-600 mt-1.5 leading-relaxed">
                     {item.desc}
                   </p>

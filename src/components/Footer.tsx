@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 2: Explore */}
           <div className="col">
-            <h4>Explore</h4>
+            <p className="footer-col-title">Explore</p>
             <button onClick={() => handleNav('home')} className="cursor-pointer block text-left bg-transparent border-0 p-0 text-white opacity-85 hover:opacity-100 hover:text-[#7DD3FC]">
               Home
             </button>
@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 3: Contact */}
           <div className="col">
-            <h4>Contact</h4>
+            <p className="footer-col-title">Contact</p>
             <a href={COMPANY_INFO.callLink}>📞 (469) 994-2172</a>
             <a href={COMPANY_INFO.smsLink}>💬 Text us anytime</a>
             <a href={COMPANY_INFO.whatsappLink} target="_blank" rel="noopener noreferrer">🟢 WhatsApp us</a>

@@ -161,9 +161,9 @@ export const WindowBlurHeroCam: React.FC<WindowBlurHeroCamProps> = ({ onBookNow 
                 ))}
                 <span className="text-xs font-black text-slate-800 ml-1">#1 Rated Kids Party Rental in Texas</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black font-display text-slate-900 leading-tight">
+              <p className="text-xl sm:text-2xl font-black font-display text-slate-900 leading-tight">
                 {currentScene.title}
-              </h3>
+              </p>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 font-semibold leading-relaxed">
                 {currentScene.caption}
               </p>

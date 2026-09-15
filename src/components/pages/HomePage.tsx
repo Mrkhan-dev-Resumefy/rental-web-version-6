@@ -73,10 +73,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <span className="pulse" />
               ⭐ Rated 4.9/5 by 300+ Texas Celebrations
             </div>
-            <h1>
-              Welcome to<br />
-              <span className="highlight">EventsRentals.io</span>
-            </h1>
+            <h1>Bounce House Rentals in Texas — EventsRentals.io</h1>
             <p className="sub">Texas's Premier Party &amp; Event Equipment Rentals 🤠</p>
             <p className="body-copy">
               We deliver pure excitement straight to your backyard — commercial bounce houses, giant outdoor cinema screens, and fresh cinema popcorn carts.
@@ -322,30 +319,30 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <span className="dot" /> Easy as 1-2-3
             </span>
           </div>
-          <h2 className="section-title scroll-reveal">Booking Is Simple.</h2>
+          <h2 className="section-title scroll-reveal">Book Your Party Rental in 3 Easy Steps</h2>
           <p className="section-subtitle scroll-reveal">
             No online carts, no confusing checkouts — just three quick steps.
           </p>
           <div className="how-grid">
             <div className="how-card scroll-reveal reveal-delay-100">
               <div className="num">1</div>
-              <h3>Reach Out</h3>
+              <h3>Step 1: Choose Your Rental</h3>
               <p>
-                Call, text, or message us on WhatsApp — or fill out the quick form on our Contact page. Tell us what you need and when.
+                Call, text, or message us on WhatsApp — or browse our commercial bounce houses, movie screens, and popcorn carts to pick your favorite.
               </p>
             </div>
             <div className="how-card scroll-reveal reveal-delay-200">
               <div className="num">2</div>
-              <h3>We Confirm</h3>
+              <h3>Step 2: Pick Your Date</h3>
               <p>
-                A real person calls you back to lock in your date, price, and delivery details. No credit card surprises.
+                A real Texas rental coordinator connects with you immediately to lock in your date, time, and transparent flat quote. No hidden fees.
               </p>
             </div>
             <div className="how-card scroll-reveal reveal-delay-300">
               <div className="num">3</div>
-              <h3>We Deliver</h3>
+              <h3>Step 3: Confirm &amp; Celebrate</h3>
               <p>
-                We show up on time, set everything up, and pick it back up when the party's over. You just enjoy the day.
+                We deliver early, complete safety anchoring and setup, and pick everything up when your celebration ends. You just enjoy the party!
               </p>
             </div>
           </div>

@@ -62,7 +62,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ preSelectedItem }) => 
           <span className="eyebrow">
             <span className="dot" /> Book Now
           </span>
-          <h1>Let's Book Your Event.</h1>
+          <h1>Book Your Texas Party Rental — EventsRentals.io</h1>
           <p>Fill out the form or reach us directly — we'll confirm your booking by phone call.</p>
         </div>
       </section>
@@ -73,6 +73,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ preSelectedItem }) => 
           <div className="contact-layout">
             {/* Form Block */}
             <div className="form-block scroll-reveal">
+              <h2 className="text-2xl font-bold font-display text-slate-900 mb-6">Reservation Request</h2>
               <form id="booking-form" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-field" style={{ marginBottom: 0 }}>
@@ -221,7 +222,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ preSelectedItem }) => 
 
             {/* Sidebar */}
             <aside className="contact-sidebar scroll-reveal reveal-delay-200">
-              <h3>Prefer to reach out directly?</h3>
+              <h2 className="text-xl font-bold font-display text-slate-900 mb-2">Prefer to reach out directly?</h2>
               <p style={{ marginBottom: '20px', color: 'var(--ink-2)', fontWeight: 600 }}>
                 Pick your favorite way — we answer fast.
               </p>

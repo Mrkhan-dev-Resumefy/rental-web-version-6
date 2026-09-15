@@ -15,7 +15,7 @@ export const PopcornCartPage: React.FC<PopcornCartPageProps> = ({ onNavigate }) 
           <span className="eyebrow">
             <span className="dot" /> Popcorn Cart Rental
           </span>
-          <h1>Fresh Popcorn. Right at Your Event.</h1>
+          <h1>Vintage Popcorn Cart Rentals in Texas — EventsRentals.io</h1>
           <p>The vintage-style cart that turns any gathering into an old-timey good time.</p>
         </div>
       </section>

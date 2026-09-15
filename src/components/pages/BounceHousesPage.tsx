@@ -27,7 +27,7 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
           <span className="eyebrow">
             <span className="dot" /> Bounce Houses
           </span>
-          <h1>Big or Small — We've Got You Covered.</h1>
+          <h1>Bounce House Rentals in Texas — EventsRentals.io</h1>
           <p>
             Choose the perfect size for your event. All units cleaned, sanitized, and delivered free anywhere in Texas.
           </p>

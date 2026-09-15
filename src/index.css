@@ -1078,11 +1078,13 @@
   color: var(--yellow);
   transform: translate(-1px, -1px);
 }
-.site-footer h4 {
+.site-footer h4,
+.site-footer .footer-col-title {
   font-family: 'Fredoka', sans-serif;
   font-size: 18px;
   color: var(--yellow);
   margin-bottom: 16px;
+  font-weight: 700;
 }
 .site-footer a {
   color: rgba(255, 255, 255, 0.85);

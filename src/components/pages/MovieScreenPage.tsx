@@ -15,7 +15,7 @@ export const MovieScreenPage: React.FC<MovieScreenPageProps> = ({ onNavigate }) 
           <span className="eyebrow">
             <span className="dot" /> Movie Screen &amp; HD Projector
           </span>
-          <h1>Backyard? Meet Big Screen.</h1>
+          <h1>Outdoor Movie Screen Rentals in Texas — EventsRentals.io</h1>
           <p>Host an unforgettable outdoor movie night, right in your backyard.</p>
         </div>
       </section>
