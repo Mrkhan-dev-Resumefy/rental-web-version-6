@@ -50,6 +50,10 @@
   </head>
   <body class="bg-[#FFFDF4] text-slate-900 antialiased font-['Nunito',sans-serif] selection:bg-red-200 selection:text-red-900">
     <div id="root"></div>
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:white;padding:1rem;z-index:1000;">
+      <p>We use cookies for analytics. <a href="/privacy" style="color:#fbbf24;">Privacy Policy</a></p>
+      <button onclick="this.parentElement.remove()">Accept</button>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
