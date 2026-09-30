@@ -104,6 +104,10 @@ export const PopcornCartPage: React.FC<PopcornCartPageProps> = ({ onNavigate }) 
                   </button>
                 </div>
               </div>
+
+              <div className="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 text-xs leading-relaxed">
+                <strong>Safety &amp; Operation Notice:</strong> Commercial popcorn kettle reaches high temperatures (350°F+). Equipment must be operated exclusively by an adult (18+). Popcorn kits contain corn, coconut oil, and salt/butter seasoning; please verify food allergy considerations for your attendees.
+              </div>
             </div>
           </div>
         </div>

@@ -29,7 +29,7 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
           </span>
           <h1>Bounce House Rentals in Texas — EventsRentals.io</h1>
           <p>
-            Choose the perfect size for your event. All units cleaned, sanitized, and delivered free anywhere in Texas.
+            Choose the perfect size for your event. All units cleaned after every rental, and delivered free anywhere in Texas.
           </p>
         </div>
       </section>
@@ -178,7 +178,7 @@ export const BounceHousesPage: React.FC<BounceHousesPageProps> = ({ onNavigate, 
               </svg>
             </div>
             <div>
-              <strong>Safety first.</strong> All units are inspected, cleaned, and sanitized before every rental. Setup and breakdown are always included — you don't lift a finger.
+              <strong>Safety first.</strong> All units are inspected and cleaned after every rental. Setup and breakdown are always included — you don't lift a finger.
             </div>
           </div>
         </div>

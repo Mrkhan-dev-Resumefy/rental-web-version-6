@@ -20,7 +20,7 @@ export const HERO_SLIDES = [
     tagline: 'Massive fun for big parties & school celebrations',
     badge: 'Popular for Birthdays',
     image: 'https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1600&q=80',
-    description: 'Vibrant, sanitized, and commercial-grade jump castles that keep older kids jumping safely for hours.',
+    description: 'Vibrant, commercial-grade jump castles cleaned after every rental to keep older kids jumping safely for hours.',
   },
   {
     title: 'Small & Toddler Bounce Houses',
@@ -52,8 +52,8 @@ export const TRUST_POINTS = [
     iconName: 'Truck',
   },
   {
-    title: 'Clean & Sanitized Equipment',
-    desc: 'Hospital-grade sanitization between every single event for 100% germ-free play.',
+    title: 'Cleaned After Every Rental',
+    desc: 'Thoroughly cleaned after every single rental before delivery to your event.',
     iconName: 'Sparkles',
   },
   {
@@ -98,7 +98,7 @@ export const RENTAL_ITEMS: Record<string, RentalItem> = {
       { label: 'Capacity', value: '8–10 children / 800 lbs' },
       { label: 'Power', value: '1 Standard 110V household outlet' },
       { label: 'Surface', value: 'Natural grass, turf, or clean concrete/driveway' },
-      { label: 'Sanitized', value: 'Disinfected before & after every booking' },
+      { label: 'Cleanliness', value: 'Cleaned after every rental' },
     ],
     features: [
       'Heavy-duty commercial vinyl with double-stitched seams',
@@ -132,7 +132,7 @@ export const RENTAL_ITEMS: Record<string, RentalItem> = {
       { label: 'Capacity', value: '4–5 younger children / 400 lbs' },
       { label: 'Power', value: '1 Standard 110V household outlet' },
       { label: 'Height Clearance', value: "8' ceiling clearance (indoor friendly!)" },
-      { label: 'Sanitized', value: 'Cleaned with non-toxic hospital-grade cleanser' },
+      { label: 'Cleanliness', value: 'Cleaned after every rental' },
     ],
     features: [
       'Low entry step designed for small hands and feet',
@@ -209,7 +209,7 @@ export const RENTAL_ITEMS: Record<string, RentalItem> = {
       'All-in-one pre-measured gourmet seed/coconut oil packs (no mess, no measuring!)',
       'Tempered safety glass panels and heated display cabinet',
       'Old-maid tray catches unpopped kernels for silky smooth popcorn',
-      'Sanitized and thoroughly deep-cleaned before delivery',
+      'Cleaned after every rental before delivery',
     ],
     pairingSuggestion: {
       text: 'Add it to your Movie Night for the full Hollywood backyard experience!',

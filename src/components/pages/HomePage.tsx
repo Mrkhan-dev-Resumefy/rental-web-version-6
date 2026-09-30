@@ -77,7 +77,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <p className="sub">Texas's Premier Party &amp; Event Equipment Rentals 🤠</p>
             <p className="body-copy">
               We deliver pure excitement straight to your backyard — commercial bounce houses, giant outdoor cinema screens, and fresh cinema popcorn carts.
-              Clean, sanitized equipment with instant booking by phone, text, or WhatsApp.
+              Cleaned after every rental with instant booking by phone, text, or WhatsApp.
             </p>
             <div className="contact-row">
               <a href={COMPANY_INFO.callLink} className="btn btn-yellow btn-lg">
@@ -103,9 +103,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </svg>
                 Text Us
               </a>
-            </div>
-            <div className="urgency-badge">
-              🚚 Free Delivery &amp; Setup • 🛡️ 100% Sanitized &amp; Insured
             </div>
           </div>
         </div>
@@ -280,7 +277,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               </div>
-              <span>Clean &amp; Sanitized<br />Equipment</span>
+              <span>Cleaned After<br />Every Rental</span>
             </div>
             <div className="trust-item scroll-reveal reveal-delay-300">
               <div className="trust-icon">

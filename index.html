@@ -11,9 +11,43 @@
     <link rel="canonical" href="https://eventsrentals.io/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
+    <!-- Polyfill/Guard: Ensure window.fetch has a setter so third-party scripts do not throw "Cannot set property fetch of #<Window> which has only a getter" -->
+    <script>
+      (function() {
+        try {
+          var origFetch = window.fetch;
+          if (typeof origFetch === 'function') {
+            var currentFetch = origFetch;
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() {
+                return currentFetch;
+              },
+              set: function(val) {
+                currentFetch = val;
+              }
+            });
+          }
+        } catch (e) {
+          try {
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              var pFetch = Window.prototype.fetch;
+              Object.defineProperty(Window.prototype, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() { return pFetch; },
+                set: function(val) { pFetch = val; }
+              });
+            }
+          } catch (_) {}
+        }
+      })();
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>Bounce Houses & Movie Nights | EventsRentals.io Texas</title>
-    <meta name="description" content="Texas's premier party rentals — bounce houses, outdoor cinema screens & fresh popcorn. Sanitized, on-time delivery. Book by phone, text, or WhatsApp in 60 seconds." />
+    <meta name="description" content="Texas's premier party rentals — bounce houses, outdoor cinema screens & fresh popcorn. Cleaned after every rental, on-time delivery. Book by phone, text, or WhatsApp in 60 seconds." />
     <meta name="keywords" content="bounce house rental Texas, party rentals Texas, movie night rental, popcorn machine rental, event rentals, Dallas party rentals, Houston party rentals" />
     <meta name="author" content="EventsRentals.io" />
 
@@ -21,7 +55,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eventsrentals.io/" />
     <meta property="og:title" content="Bounce Houses & Movie Nights | EventsRentals.io Texas" />
-    <meta property="og:description" content="Texas's premier party rentals — bounce houses, outdoor cinema screens & fresh popcorn. Sanitized, on-time delivery. Book by phone, text, or WhatsApp in 60 seconds." />
+    <meta property="og:description" content="Texas's premier party rentals — bounce houses, outdoor cinema screens & fresh popcorn. Cleaned after every rental, on-time delivery. Book by phone, text, or WhatsApp in 60 seconds." />
     <meta property="og:image" content="https://eventsrentals.io/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -122,10 +156,10 @@
         },
         {
           "@type": "Question",
-          "name": "Is the equipment cleaned and sanitized?",
+          "name": "Is the equipment cleaned before my event?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely! Every piece of equipment is thoroughly cleaned and sanitized after every rental — never reused between events without a full deep clean."
+            "text": "Yes! Every piece of equipment is thoroughly cleaned after every rental — never delivered between events without a full clean."
           }
         },
         {
@@ -148,26 +182,37 @@
     <link rel="preload" as="image" href="/hero-bounce-house.webp" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
+      var GA_ID = 'GA_MEASUREMENT_ID';
+      if (GA_ID && GA_ID !== 'GA_MEASUREMENT_ID') {
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(gaScript);
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
     </script>
 
     <!-- Facebook Pixel -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', 'YOUR_PIXEL_ID');
-      fbq('track', 'PageView');
+      var PIXEL_ID = 'YOUR_PIXEL_ID';
+      if (PIXEL_ID && PIXEL_ID !== 'YOUR_PIXEL_ID') {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', PIXEL_ID);
+        fbq('track', 'PageView');
+      } else {
+        window.fbq = window.fbq || function() {};
+      }
     </script>
   </head>
   <body class="bg-[#FFFDF4] text-slate-900 antialiased font-['Nunito',sans-serif] selection:bg-red-200 selection:text-red-900">

@@ -11,8 +11,8 @@ export const TrustStrip: React.FC = () => {
     },
     {
       icon: Sparkles,
-      title: '100% Sanitized & Clean',
-      desc: 'Hospital-grade non-toxic sanitization before & after every celebration.',
+      title: 'Cleaned After Every Rental',
+      desc: 'Every piece of equipment is thoroughly cleaned before and after every booking.',
       badgeBg: 'bg-sky-400 text-slate-900',
     },
     {

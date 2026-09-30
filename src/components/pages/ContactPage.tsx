@@ -214,6 +214,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ preSelectedItem }) => 
                   {submitted ? "✓ Booking Request Sent!" : 'Send My Booking Request →'}
                 </button>
 
+                <p className="text-[11px] text-slate-500 leading-relaxed mt-3 text-center">
+                  By submitting this form and providing your phone number, you agree to receive customer service calls and text messages (SMS) from EventsRentals.io regarding your rental inquiry. Message and data rates may apply. Reply STOP to cancel at any time. Consent is not a condition of purchase.
+                </p>
+
                 <p className="form-note">
                   📞 All bookings are confirmed via a quick phone call — we'll reach out shortly after you submit.
                 </p>

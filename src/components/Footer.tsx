@@ -99,7 +99,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom bar */}
         <div className="footer-bottom">
           <span>© {currentYear} EventsRentals.io — All rights reserved.</span>
-          <span>Made with ❤️ in Texas</span>
+          <div className="flex items-center gap-4">
+            <a href="/privacy" className="text-slate-300 hover:text-white transition-colors underline">
+              Privacy Policy
+            </a>
+            <span>Made with ❤️ in Texas</span>
+          </div>
         </div>
       </div>
     </footer>

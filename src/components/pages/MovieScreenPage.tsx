@@ -108,6 +108,10 @@ export const MovieScreenPage: React.FC<MovieScreenPageProps> = ({ onNavigate }) 
                   </button>
                 </div>
               </div>
+
+              <div className="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 text-xs leading-relaxed">
+                <strong>Equipment Rental Disclaimer:</strong> EventsRentals.io provides audiovisual projection equipment and screen rentals only. We do not provide, sell, or license copyrighted video content or films. Event hosts and organizers are solely responsible for providing their own legal media playback source and securing any necessary Public Performance Licenses (e.g., via Swank Motion Pictures or MPLC) for public, community, or non-residential screenings.
+              </div>
             </div>
           </div>
         </div>
