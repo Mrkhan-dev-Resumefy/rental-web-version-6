@@ -8,7 +8,7 @@ export const COMPANY_INFO = {
   email: 'hello@eventsrentals.io',
   serviceArea: 'All of Texas (Statewide)',
   facebookUrl: 'https://www.facebook.com/share/1Brd4vbe3S/',
-  instagramUrl: 'https://www.instagram.com',
+  instagramUrl: 'https://www.instagram.com/eventsrentals.io?stkn=MTM4OXVzcjdyZm81cA==',
   whatsappLink: 'https://wa.me/14699942172?text=Hi!%20I\'d%20like%20to%20book%20a%20rental%20with%20EventsRentals.io',
   callLink: 'tel:+14699942172',
   smsLink: 'sms:+14699942172?body=Hi!%20I\'d%20like%20to%20book%20a%20rental%20with%20EventsRentals.io',
